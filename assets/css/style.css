@@ -1,0 +1,58 @@
+header {
+    background-color: chocolate; 
+    width: 280px; 
+    height: 100px;
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+h1 {
+    color: white;
+    padding-top: 5px;  
+ 
+    /* vertical-align: middle;  */
+    /* margin-top: 40px;  */
+}
+
+.instructions {
+    background-color: blanchedalmond; 
+    color: darkseagreen; 
+    width: 400px; 
+    height: 400px; 
+    padding: 5px; 
+}
+
+.calculations {
+    display: flex; 
+    margin-top: 15px; 
+}
+
+.random-number {
+    background-color: mediumseagreen; 
+    width: 210px; 
+    height: 120px;
+    margin-right: 15px;  
+}
+
+.wins-losses {
+    background-color: turquoise; 
+    height: 120px; 
+    width: 75px; 
+}
+
+.score-notice,  
+.total-score {
+    background-color: lightseagreen; 
+    color: white; 
+    width: 210px; 
+}
+
+.score-notice{
+    height: 25px; 
+    margin-bottom: 5px; 
+    margin-top: 5px; 
+}
+.total-score{
+    height: 120px; 
+}
