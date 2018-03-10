@@ -10,20 +10,23 @@ let crystalRandom4;
 
 // loading crystal variables when page loads
 window.onload = function(){
-    crystalRandom1 = Math.floor(Math.random() *13); 
-    crystalRandom2 = Math.floor(Math.random() *13);
-    crystalRandom3 = Math.floor(Math.random() *13);
-    crystalRandom4 = Math.floor(Math.random() *13);
+    getRandom(); 
+}
+// get all random functions
+function getRandom (){
+    crystalRandom1 = Math.floor(Math.random() *12 + 1); 
+    crystalRandom2 = Math.floor(Math.random() *12 + 1);
+    crystalRandom3 = Math.floor(Math.random() *12 + 1);
+    crystalRandom4 = Math.floor(Math.random() *12 + 1);
     console.log("1", crystalRandom1);
     console.log("2", crystalRandom2);
     console.log("3", crystalRandom3);
     console.log("4", crystalRandom4);
+    randomNumber = Math.floor(Math.random() * 102) + 18; 
+    $(`.r-number`).text(randomNumber);
+    totalScore = 0; 
+    $(`#ts`).text(totalScore);
 }
-
-// math random function
-
-randomNumber = Math.floor(Math.random() * 102) + 18; 
-$(`.r-number`).text(randomNumber);
 
 // total score
 totalScore = 0; 
@@ -69,15 +72,18 @@ function conclusion() {
          losses ++ ; 
          console.log(losses, wins); 
         $(`#losses`).text(losses); 
-        location.reload(); 
+        getRandom();
+        
     } else if (totalScore === randomNumber){
          wins ++ ; 
         $(`#wins`).text(wins); 
-        location.reload(); 
+        getRandom();
+        
     }
 }
 
 // trying to get the page to reload after a win or loss
+// found a better way
 // function restart(){
 //     if (wins ++ || losses ++){
 //         location.reload(); 
