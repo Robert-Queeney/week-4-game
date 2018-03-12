@@ -35,7 +35,7 @@ h1 {
     margin-right: 15px;  
 }
 #crystal1{
-    background-image: "assets/images/ruby.png"; 
+    background-image: ("assets/images/ruby.png"); 
 }
 
 .wins-losses {
