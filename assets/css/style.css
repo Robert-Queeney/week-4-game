@@ -34,6 +34,9 @@ h1 {
     height: 120px;
     margin-right: 15px;  
 }
+#crystal1{
+    background-image: "assets/images/ruby.png"; 
+}
 
 .wins-losses {
     background-color: turquoise; 
@@ -52,6 +55,10 @@ h1 {
     height: 25px; 
     margin-bottom: 5px; 
     margin-top: 5px; 
+}
+
+#ts {
+    font-size: 32px; 
 }
 .total-score{
     height: 120px; 

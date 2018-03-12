@@ -72,11 +72,13 @@ function conclusion() {
          losses ++ ; 
          console.log(losses, wins); 
         $(`#losses`).text(losses); 
+        $(`#game-result`).text("You lose!");
         getRandom();
         
     } else if (totalScore === randomNumber){
          wins ++ ; 
         $(`#wins`).text(wins); 
+        $(`#game-result`).text("You win!");
         getRandom();
         
     }
